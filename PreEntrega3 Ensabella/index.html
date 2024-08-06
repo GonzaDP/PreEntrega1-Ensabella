@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Películas</title>
+</head>
+<body>
+    <h1>Buscador de Películas</h1>
+    <div id="previsualizacion">
+        <h2>Todas las Películas</h2>
+        <div id="listaPeliculas"></div>
+    </div>
+    <div>
+        <label for="titulo">Buscar por título:</label>
+        <input type="text" id="titulo">
+        <button id="buscarTitulo" type="submit">Buscar</button>
+    </div>
+    <div>
+        <label>Filtrar por rango de año. Desde:</label>
+        <input type="number" id="minAño">
+        <label>Hasta:</label>
+        <input type="number" id="maxAño">
+        <button id="filtrarRangoAño" type="submit">Filtrar</button>
+    </div>
+    <div>
+        <label>Filtrar por calificación mínima: (del 1 al 10)</label>
+        <input type="number" id="minCalificacion">
+        <button id="filtrarMinCalificacion" type="submit">Filtrar</button>
+    </div>
+    <div>
+        <label>Filtrar por calificación máxima (del 1 al 10):</label>
+        <input type="number" id="maxCalificacion">
+        <button id="filtrarMaxCalificacion" type="submit">Filtrar</button>
+    </div>
+    <div>
+        <button id="ordenarAñoAsc" type="submit">Ordenar por año ascendente</button>
+        <button id="ordenarAñoDes" type="submit">Ordenar por año Descendente</button>
+
+    </div>
+    <div>
+        <button id="ordenarCalificacionAsc" type="submit">Ordenar por calificación ascendente</button>
+        <button id="ordenarCalificacionDes" type="submit">Ordenar por calificación descendente</button>
+    </div>
+    <div id="resultados"></div>
+    <script src="JS/app.js"></script>
+</body>
+</html>
