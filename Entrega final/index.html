@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Películas</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <h1>Buscador de Películas</h1>
+
+    <div id="previsualizacion">
+        <h2>Todas las Películas</h2>
+        <div id="listaPeliculas"></div>
+    </div>
+
+    <div>
+        <label for="titulo">Buscar por título:</label>
+        <input type="text" id="titulo">
+        <button id="buscarTitulo">Buscar</button>
+    </div>
+
+    <div>
+        <label>Filtrar por rango de año. Desde:</label>
+        <input type="number" id="minAño">
+        <label>Hasta:</label>
+        <input type="number" id="maxAño">
+        <button id="filtrarRangoAño">Filtrar</button>
+    </div>
+
+    <div>
+        <label>Filtrar por calificación mínima (del 1 al 10):</label>
+        <input type="number" id="minCalificacion" step="0.1">
+        <button id="filtrarMinCalificacion">Filtrar</button>
+    </div>
+
+    <div>
+        <label>Filtrar por calificación máxima (del 1 al 10):</label>
+        <input type="number" id="maxCalificacion" step="0.1">
+        <button id="filtrarMaxCalificacion">Filtrar</button>
+    </div>
+
+    <div>
+        <button id="ordenarAñoAsc">Ordenar por año ascendente</button>
+        <button id="ordenarAñoDes">Ordenar por año descendente</button>
+    </div>
+
+    <div>
+        <button id="ordenarCalificacionAsc">Ordenar por calificación ascendente</button>
+        <button id="ordenarCalificacionDes">Ordenar por calificación descendente</button>
+    </div>
+
+    <div id="resultados"></div>
+
+    <h2>Filtrar Películas</h2>
+    <input type="text" id="tituloAPI" placeholder="Escribe el título de la película">
+    <button id="filtrarAPI">Filtrar</button>
+
+    <div id="resultadosAPI"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
